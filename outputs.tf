@@ -31,6 +31,7 @@ output "subnet_vpc_name" {
   value = data.huaweicloud_vpc_subnet.subnet.name
 }
 data "huaweicloud_compute_flavors" "flavors_mx_1" {
+  region           = "na-mexico-1"
   performance_type = "normal"
   cpu_core_count   = 1
   memory_size      = 2
