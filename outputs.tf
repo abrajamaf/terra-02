@@ -2,18 +2,28 @@ data "huaweicloud_availability_zones" "mexico_1" {
   region = "na-mexico-1"
 }
 
-output "zonez_mexico_1" {
+output "zonez_mexico_1_ids" {
   description = "zona de disponibilidad"
   value       = data.huaweicloud_availability_zones.mexico_1.id
+}
+
+output "zonez_mexico_1_names" {
+  description = "zona de disponibilidad"
+  value       = data.huaweicloud_availability_zones.mexico_1.name
 }
 
 data "huaweicloud_availability_zones" "mexico_2" {
   region = "la-north-2"
 }
 
-output "zonez_mexico_2" {
+output "zonez_mexico_2_id" {
   description = "zona de disponibilidad"
   value       = data.huaweicloud_availability_zones.mexico_2.id
+}
+
+output "zonez_mexico_2_name" {
+  description = "zona de disponibilidad"
+  value       = data.huaweicloud_availability_zones.mexico_2.name
 }
 
 # data "huaweicloud_compute_flavors" "sabor_os" {
