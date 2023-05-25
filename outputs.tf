@@ -9,7 +9,7 @@ output "zonez_mexico_1_ids" {
 
 output "zonez_mexico_1_names" {
   description = "zona de disponibilidad"
-  value       = data.huaweicloud_availability_zones.mexico_1.name
+  value       = data.huaweicloud_availability_zones.mexico_1.names
 }
 
 data "huaweicloud_availability_zones" "mexico_2" {
@@ -23,7 +23,7 @@ output "zonez_mexico_2_id" {
 
 output "zonez_mexico_2_name" {
   description = "zona de disponibilidad"
-  value       = data.huaweicloud_availability_zones.mexico_2.name
+  value       = data.huaweicloud_availability_zones.mexico_2.names
 }
 
 # data "huaweicloud_compute_flavors" "sabor_os" {
