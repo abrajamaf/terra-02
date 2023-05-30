@@ -70,6 +70,7 @@ data "huaweicloud_images_image" "myimage" {
 
 data "huaweicloud_images_images" "myimages" {
   visibility  = "public"
+  os = "Ubuntu"
   # most_recent = true
 }
 
@@ -80,5 +81,5 @@ output "SO_image" {
 
 
 output "SO_images" {
-  value = data.huaweicloud_images_images.myimages.images[name]
+  value = data.huaweicloud_images_images.myimages.images[]
 }
