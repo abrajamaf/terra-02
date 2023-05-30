@@ -63,10 +63,21 @@ output "flavors_mx2c" {
 }
 
 data "huaweicloud_images_image" "myimage" {
-  # name        = "Ubuntu"
+  visibility  = "public"
   most_recent = true
 }
 
-output "SO_ubuntu" {
+data "huaweicloud_images_images" "myimages" {
+  visibility  = "public"
+  most_recent = true
+}
+
+
+output "SO_image" {
   value = data.huaweicloud_images_image.myimage.name
+}
+
+
+output "SO_images" {
+  value = data.huaweicloud_images_image.myimages.name
 }
