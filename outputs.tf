@@ -61,3 +61,12 @@ data "huaweicloud_compute_flavors" "flavors_mx2c" {
 output "flavors_mx2c" {
   value = data.huaweicloud_compute_flavors.flavors_mx2c.ids[0]
 }
+
+data "huaweicloud_images_image" "myimage" {
+  # name        = "Ubuntu"
+  most_recent = true
+}
+
+output "SO_ubuntu" {
+  value = data.huaweicloud_images_image.myimage.names
+}
