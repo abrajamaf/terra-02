@@ -76,7 +76,7 @@ data "huaweicloud_images_images" "myimages" {
 
 
 output "SO_image" {
-  value = data.huaweicloud_images_image.myimage.isd
+  value = data.huaweicloud_images_image.myimage.ids
 }
 
 
