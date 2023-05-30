@@ -81,5 +81,5 @@ output "SO_image" {
 
 
 output "SO_images" {
-  value = data.huaweicloud_images_images.myimages.images[0]
+  value = data.huaweicloud_images_images.myimages.images.os_version
 }
