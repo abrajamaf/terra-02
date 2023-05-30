@@ -1,5 +1,6 @@
 data "huaweicloud_availability_zones" "mexico_1" {
   region = "na-mexico-1"
+  state  = "available"
 }
 
 output "zonez_mexico_1_ids" {
@@ -13,7 +14,8 @@ output "zonez_mexico_1_names" {
 }
 
 data "huaweicloud_availability_zones" "mexico_2" {
-  region = "la-north-2"
+  #  region = "la-north-2"
+  state = "available"
 }
 
 output "zonez_mexico_2_id" {
