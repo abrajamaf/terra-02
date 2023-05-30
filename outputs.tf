@@ -71,7 +71,6 @@ data "huaweicloud_images_image" "myimage" {
 data "huaweicloud_images_images" "myimages" {
   visibility  = "public"
   os          = "Ubuntu"
-  most_recent = true
 }
 
 
