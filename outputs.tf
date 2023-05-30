@@ -64,12 +64,12 @@ output "flavors_mx2c" {
 
 data "huaweicloud_images_image" "myimage" {
   visibility  = "public"
-  most_recent = true
+  # most_recent = true
 }
 
 data "huaweicloud_images_images" "myimages" {
   visibility  = "public"
-  most_recent = true
+  # most_recent = true
 }
 
 
