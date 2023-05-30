@@ -64,13 +64,13 @@ output "flavors_mx2c" {
 
 data "huaweicloud_images_image" "myimage" {
   visibility  = "public"
-  os = "Ubuntu"
+  os          = "Ubuntu"
   most_recent = true
 }
 
 data "huaweicloud_images_images" "myimages" {
-  # visibility  = "public"
-  os = "Ubuntu"
+  visibility = "public"
+  os         = "Ubuntu"
   # most_recent = true
 }
 
@@ -81,5 +81,5 @@ output "SO_image" {
 
 
 output "SO_images" {
-  value = data.huaweicloud_images_images.myimages.images
+  value = data.huaweicloud_images_images.myimages.images[0]
 }
