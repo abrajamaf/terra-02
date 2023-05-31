@@ -75,10 +75,10 @@ data "huaweicloud_images_images" "myimages" {
 
 
 output "SO_image" {
-  value = data.huaweicloud_images_image.myimage.id
+  value = data.huaweicloud_images_image.myimage.name 
 }
 
 
 output "SO_images" {
-  value = data.huaweicloud_images_images.myimages.images[]
+  value = data.huaweicloud_images_images.myimages.images
 }
