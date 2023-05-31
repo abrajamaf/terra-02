@@ -64,7 +64,7 @@ output "flavors_mx2c" {
 
 data "huaweicloud_images_image" "myimage" {
   visibility  = "public"
-  os          = "Ubuntu"
+  os          = "Linux"
   most_recent = true
 }
 
